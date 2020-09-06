@@ -4,7 +4,6 @@ class Song < ActiveRecord::Base
 
   def get_genre_name
     Genre.all.map {|g| g.name}.first
-    binding.pry
   end
 
   def drake_made_this
